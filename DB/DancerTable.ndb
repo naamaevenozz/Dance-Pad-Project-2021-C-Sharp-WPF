@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DancerTable.ndb" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DancerTable.ndb">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Username" type="xs:string" />
+                <xs:element name="Password" type="xs:string" minOccurs="0" />
+                <xs:element name="Record" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//DancerTable.ndb" />
+        <xs:field xpath="Username" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <DancerTable.ndb>
+    <Username>nm</Username>
+    <Password>123</Password>
+    <Record>4981</Record>
+  </DancerTable.ndb>
+  <DancerTable.ndb>
+    <Username>Diniwintwer</Username>
+    <Password>123</Password>
+    <Record>0</Record>
+  </DancerTable.ndb>
+  <DancerTable.ndb>
+    <Username>hoshen</Username>
+    <Password>123</Password>
+    <Record>0</Record>
+  </DancerTable.ndb>
+  <DancerTable.ndb>
+    <Username>roee</Username>
+    <Password>roire</Password>
+    <Record>1507</Record>
+  </DancerTable.ndb>
+  <DancerTable.ndb>
+    <Username>Idit</Username>
+    <Password>123</Password>
+    <Record>2559</Record>
+  </DancerTable.ndb>
+  <DancerTable.ndb>
+    <Username>lia</Username>
+    <Password>123</Password>
+    <Record>1574</Record>
+  </DancerTable.ndb>
+  <DancerTable.ndb>
+    <Username>Diniwinter</Username>
+    <Password>123</Password>
+    <Record>1570</Record>
+  </DancerTable.ndb>
+</NewDataSet>
