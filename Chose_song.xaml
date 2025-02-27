@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_DancePad_Client.Chose_song"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_DancePad_Client"
+        mc:Ignorable="d"
+        Title="Chose_song" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Radio.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="183*"/>
+            <ColumnDefinition Width="406*"/>
+            <ColumnDefinition Width="206*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="imgArrow" Height="100" Width="100" Margin="42,167,41,167"  />
+
+
+        <ListView x:Name="listOfSounds"   SelectionChanged="listOfSounds_SelectionChanged" Margin="-3,277,-1,-3" Grid.ColumnSpan="4" Background="Violet" ItemsSource="{Binding listSounds}" >
+            <ListView.View>
+
+                <GridView>
+                    <GridViewColumn Header="List of songs" Width="150"  />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+
+        <Button x:Name="btnStart" Content="Start" Background="Violet" FontFamily="Showcard Gothic" Click="BtnStart_Click" IsEnabled="False"  FontSize="30" RenderTransformOrigin="0.551,0.761" Grid.Column="1" Margin="129,160,102,201"/>
+
+
+    </Grid>
+</Window>

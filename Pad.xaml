@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_DancePad_Client.Pad"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_DancePad_Client"
+        mc:Ignorable="d"
+        Title="Pad" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="371*"/>
+            <RowDefinition Height="48*"/>
+        </Grid.RowDefinitions>
+        <Image Name="X" HorizontalAlignment="Left" Height="151" Margin="-10,-8,0,0" VerticalAlignment="Top" Width="274" Source="Images/X.jpg" Stretch="Fill"/>
+        <Image Name="Left" HorizontalAlignment="Left" Height="140" Margin="-13,140,0,0" VerticalAlignment="Top" Width="274" Source="Images/LeftArrow.jpg" Stretch="Fill"/>
+        <Image Name="Triangular" HorizontalAlignment="Left" Height="140" Margin="-11,279,0,0" VerticalAlignment="Top" Width="272" Source="Images/T.jpg" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image Name="Up" HorizontalAlignment="Left" Height="141" Margin="260,0,0,0" VerticalAlignment="Top" Width="263" Source="Images/UpArrow.jpg" Stretch="Fill"/>
+        <Image Name="Middle" HorizontalAlignment="Left" Height="139" Margin="260,140,0,0" VerticalAlignment="Top" Width="263" Source="Images/Middle.jpg" Stretch="Fill"/>
+        <Image Name="Down" HorizontalAlignment="Left" Height="140" Margin="260,279,0,0" VerticalAlignment="Top" Width="263" Source="Images/DownArrow.jpg" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image Name="O" HorizontalAlignment="Left" Height="141" Margin="522,0,0,0" VerticalAlignment="Top" Width="270"  Source="Images/O.jpg" Stretch="Fill"/>
+        <Image Name="Right" HorizontalAlignment="Left" Height="138" Margin="522,141,-3,0" VerticalAlignment="Top" Width="273" Source="Images/RightArrow.jpg" Stretch="Fill"/>
+        <Image  Name="Square" HorizontalAlignment="Left" Height="140" Margin="523,279,0,0" VerticalAlignment="Top" Width="269" Source="Images/S.jpg" Stretch="Fill" Grid.RowSpan="2"/>
+        <Button x:Name="btnStart" Content="Start" Background="Violet" FontFamily="Showcard Gothic"  IsEnabled="True"  FontSize="30" RenderTransformOrigin="0.551,0.761" Margin="266,175,269,137.438" Click="Game"/>
+
+    </Grid>
+</Window>
